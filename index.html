@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+    <!-- section 1 -->
+    <section id="nav-section">
+        <nav class="containerone" id="cont">
+            <div class="ham" id="ham1" onclick="openSideBar()"><span class="material-icons">
+                menu
+                </span></div>
+            <div><img src="./Cookpal 1.png"></div>
+            <div class="nav2">
+                <span>Home</span>
+                <span>Explore</span>
+                <span>Help</span>
+                <img src="./Ellipse 2.png">
+            </div>
+            
+        </nav>
+    </section>
+     
+   <!-- section 2 -->
+    <div class="hero">
+        <h4>Trending now</h4>
+        <div>Mike's famous salad</div>
+        <div>with cheess</div>
+        <p>By john Mike</p>
+    </div>
+    <div class="rec">Search For Recipes</div>
+    
+    <!-- section 3 -->
+
+    <div class="input-div">
+        <input type="text" placeholder="search here" name="searchtext" id="input" onkeyup="search()">
+        <button onclick="search()" id="searchbtn">search</button>
+    </div>
+  
+    <!-- section 4 -->
+    <div class="threebutton">
+       <button style="background-color:#EAAA00 ; color: white;" onclick="AllRecipes()">All Recipes</button>
+       <button style="background-color:#C4D600 ; color: white;" onclick="VegRecipes()">Veg Recipes Only</button>
+       <button style="background-color:#DC582A ; color: white;" onclick="nonVeg()">Non Veg Recipes</button>
+    </div>
+
+    <!-- section 5 -->
+
+    <section class="important">
+        <div class="ratingdiv">
+            <p>Rating</p>
+            <!-- <input type="radio" name="food" value="pizza" onclick="onTickFunction(this)" style="width:250px; align-items:center;">4 And Above
+            <input type="radio" name="food" value="burger" onclick="onTickFunction(this)">Below 4 -->
+            <form>
+                <label>
+                    <input type="radio" name="food" value="4" style="width: 150px;" onclick="onTickFunction(this)" >
+                    Rating above 4
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="food" value="3" style="width: 150px;" onclick="onTickFunction(this)">
+                    Rating Below 4
+                </label>
+            </form>
+        </div>
+        <div id="contentDisplay">
+
+        </div>
+    </section>
+
+
+    <!-- section 6 -->
+
+    <footer class="footer">
+     <div>
+        <img src="./Cookpal 1.png">
+        <p>Cookpal is a recipe website with a wide variety <br>of delicious recipes, easy-to-use search function.<br> Join our community and let's cook together!</p>
+     </div>
+     <div class="two">
+        <h3>Company</h3>
+        <div>Home</div>
+        <div>Explore</div>
+        <div>Team</div>
+        <div>About us</div>
+        <div>Activity</div>
+     </div>
+     <div class="two">
+        <h3>Resources</h3>
+        <div>Blog</div>
+        <div>Use cases</div>
+        <div>Testimonials</div>
+        <div>Insights</div>
+     </div>
+     <div>
+        <img src="./Cookpal 1.png">
+        <p>Ut risus mattis interdum faucibus facilisi.<br> Facilisi purus accumsan aliquam.</p>
+     </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
